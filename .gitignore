@@ -29,3 +29,7 @@
 *.app
 
 mjp
+.deps/*
+.idea/*
+src/mjp
+src/.deps/*

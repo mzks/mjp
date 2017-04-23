@@ -1,10 +1,10 @@
 // mjpDate.cc
 // Author MIZUKOSHI Keita
 
-#include "mjpDate.hh"
 #include <iostream>
 #include <string>
 #include <sstream>
+#include "../include/mjpDate.hpp"
 
 mjpDate::mjpDate()
 {
