@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-#include "../include/mjpDate.hpp"
+#include "mjpDate.hpp"
 
 mjpDate::mjpDate()
 {
