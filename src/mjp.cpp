@@ -5,6 +5,7 @@
 #include <string>
 #include "./lib/mjpDate.hpp"
 #include "./lib/mjpWrite.hpp"
+#include "./lib/mjpRead.hpp"
 
 int main(int argc, char **argv){
 
@@ -23,7 +24,6 @@ int main(int argc, char **argv){
 				break;
 			case 'w':
 				write_flag = 1;
-
 				sname = optarg;
 				break;
 			case 'r':
@@ -47,19 +47,20 @@ int main(int argc, char **argv){
 	   	std::cout << "no option" << std::endl; 
 		return 1;
 	}
-
 	
 	if(debug_flag == 1){
-		mjpWrite writeFile;
-		writeFile.Write();
-	}
-
-	if(write_flag == 1){
 		mjpDate mjpJammerDate;
 		std::cout << mjpJammerDate.getTimeStamp() << std::endl;
 	}
+
+	if(write_flag == 1){
+		mjpWrite writeFile;
+		writeFile.Write(sname);
+	}
 	
 	if(read_flag == 1){
+		mjpRead readFile;
+		readFile.Read();
 	}
 
 	return 0;
