@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <string>
 #include "./lib/mjpDate.hpp"
+#include "./lib/mjpWrite.hpp"
 
 int main(int argc, char **argv){
 
@@ -49,6 +50,8 @@ int main(int argc, char **argv){
 
 	
 	if(debug_flag == 1){
+		mjpWrite writeFile;
+		writeFile.Write();
 	}
 
 	if(write_flag == 1){
