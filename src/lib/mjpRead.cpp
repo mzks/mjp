@@ -20,6 +20,9 @@ mjpRead::mjpRead(){
 
 
 }
+mjpRead::~mjpRead(){
+	input.close();
+}
 
 void mjpRead::Read(){
 	int yyyy, mm, dd, hh, mi, ss;

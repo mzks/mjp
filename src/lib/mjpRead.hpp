@@ -11,6 +11,7 @@ class mjpRead{
 
 	public:
 		mjpRead();
+		~mjpRead();
 		void Read();
 
 };

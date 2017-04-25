@@ -24,6 +24,9 @@ mjpWrite::mjpWrite(){
 		output.open( strcat(std::getenv("XDG_DATA_HOME"),"/data.txt"),std::ios::app);
 	}
 }
+mjpWrite::~mjpWrite(){
+	output.close();
+}
 
 void mjpWrite::Write(std::string who = "anonymous" ){
 
