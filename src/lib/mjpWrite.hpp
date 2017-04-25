@@ -12,6 +12,8 @@ class mjpWrite{
 
 	public:
 		mjpWrite();
+		~mjpWrite();
+
 		void Write(std::string);
 
 };

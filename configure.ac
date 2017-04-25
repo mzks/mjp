@@ -2,10 +2,12 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([mjp], [0.1], [mzks@km.phys.sci.osaka-u.ac.jp])
+AC_INIT([mjp], [2.0], [mzks@km.phys.sci.osaka-u.ac.jp])
 AM_INIT_AUTOMAKE([foreign])
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADERS([config.h])
+
+:{$CXXFLUGS="-std=c++11"}
 
 # Checks for programs.
 AC_PROG_CXX
