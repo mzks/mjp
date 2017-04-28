@@ -2,6 +2,7 @@
 //
 #include <iostream>
 #include <string>
+#include <string.h>
 #include "mjpWrite.hpp"
 #include "mjpDate.hpp"
 #include <fstream>
