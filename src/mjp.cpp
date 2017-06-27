@@ -3,9 +3,9 @@
 #include <iostream>
 #include <unistd.h>
 #include <string>
-#include "./lib/mjpDate.hpp"
-#include "./lib/mjpWrite.hpp"
-#include "./lib/mjpRead.hpp"
+#include "mjpDate.hpp"
+#include "mjpWrite.hpp"
+#include "mjpRead.hpp"
 
 int main(int argc, char **argv){
 
