@@ -16,7 +16,7 @@ int main(int argc, char **argv){
 	int c;
 	bool noOption = true;
 
-	while((c = getopt (argc, argv, "hdrw::")) != -1){
+	while((c = getopt (argc, argv, "hdrw:")) != -1){
 		noOption = false;
 		switch(c){
 			case 'd':
